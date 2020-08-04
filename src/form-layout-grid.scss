@@ -7,6 +7,11 @@ $blockContainer: #{$fd-namespace}-container;
 $blockRow: #{$fd-namespace}-row;
 $cols: 11;
 
+@mixin placement($direction, $justify) {
+  text-align: $direction;
+  justify-content: $justify;
+}
+
 @media (min-width: 0) {
   .#{$blockContainer}.#{$block}-container {
     padding: 1rem;
@@ -32,8 +37,8 @@ $cols: 11;
 
       .#{$blockCol} {
         padding: 0 0.25rem;
-        text-align: left;
-        justify-content: flex-start;
+
+        @include placement('left', 'flex-start');
 
         .fd-select__control {
           margin: 0.25rem 0;
@@ -46,8 +51,8 @@ $cols: 11;
 
         @for $n from 0 through $cols {
           &--#{$n} {
-            text-align: right;
-            justify-content: flex-end;
+            @include placement('right', 'flex-end');
+
             margin-bottom: 0;
 
             .fd-form-label {
@@ -57,8 +62,7 @@ $cols: 11;
         }
 
         &--12 {
-          text-align: left;
-          justify-content: flex-start;
+          @include placement('left', 'flex-start');
         }
 
         .#{$blockRow} {
@@ -87,15 +91,14 @@ $cols: 11;
 
         @for $n from 0 through $cols {
           &--#{$n}--m {
-            text-align: right;
-            justify-content: flex-end;
+            @include placement('right', 'flex-end');
+
             margin-bottom: 0;
           }
         }
 
         &--12--m {
-          text-align: left;
-          justify-content: flex-start;
+          @include placement('left', 'flex-start');
 
           .fd-form-label {
             padding-bottom: 0.125rem;
@@ -116,15 +119,14 @@ $cols: 11;
 
         @for $n from 0 through $cols {
           &--#{$n}--l {
-            text-align: right;
-            justify-content: flex-end;
+            @include placement('right', 'flex-end');
+
             margin-bottom: 0;
           }
         }
 
         &--12--l {
-          text-align: left;
-          justify-content: flex-start;
+          @include placement('left', 'flex-start');
 
           .fd-form-label {
             padding-bottom: 0.125rem;
@@ -145,15 +147,14 @@ $cols: 11;
 
         @for $n from 0 through $cols {
           &--#{$n}--xl {
-            text-align: right;
-            justify-content: flex-end;
+            @include placement('right', 'flex-end');
+
             margin-bottom: 0;
           }
         }
 
         &--12--xl {
-          text-align: left;
-          justify-content: flex-start;
+          @include placement('left', 'flex-start');
 
           .fd-form-label {
             padding-bottom: 0.125rem;

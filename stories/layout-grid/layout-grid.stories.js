@@ -5,20 +5,23 @@ export default {
     parameters: {
         description: `The layout grid is made to seperate data into both columns and rows. If there is not enough space on the current line of the same row, the item will go to the next line without the margin at the top.
 To use the grid, the user must use all of the \`fd-container\`, \`fd-row\`, and \`fd-col\` tags.
-- Use the \`fd-container\` class to wrap the whole grid and help apply the proper row margin
+
+- Use the \`fd-container\` class to wrap the whole grid and help apply the proper row margin.
 - Use the \`fd-container--no-gap\` modifier to remove the gutter spacing between all columns.
 - Use the \`fd-row\` to seperate rows and have an automatic gutter in between columns when they column wraps to the next line.
-- Use the \`fd-col\` to create a column of a certain width. The default value will create a column the full width, being 12 columns of the parent at size small and above unless specified another size 
-- Use the \`fd-col--x\` modifier will make the column spread x-rows/12 (e.g. \`fd-col--4\` which will take 4 columns out of 12)
+- Use the \`fd-col\` to create a column of a certain width. The default value will create a column the full width, being 12 columns of the parent at size small and above unless specified another size.
+- Use the \`fd-col--x\` modifier will make the column spread x-rows/12 (e.g. \`fd-col--4\` which will take 4 columns out of 12).
+
 <h2>Breakpoints</h2>
-- Default until next specified breakpoint  <br>
-\`fd-col--x\` will be used until the next specified minimum breakpoint, column takes x/12 space of the row
+
+- Default until next specified breakpoint<br>
+\`fd-col--x\` will be used until the next specified minimum breakpoint, column takes x/12 space of the row.
 - Medium 600px<br>
-\`fd-col--x--m\` will be used from 600px to the next specified minimum breakpoint, column takes x/12 space of the row
+\`fd-col--x--m\` will be used from 600px to the next specified minimum breakpoint, column takes x/12 space of the row.
 - Large 1024px<br>
-\`fd-col--x--l\` will be used from 1024px to the next specified minimum breakpoint, column takes x/12 space of the row
+\`fd-col--x--l\` will be used from 1024px to the next specified minimum breakpoint, column takes x/12 space of the row.
 - Extra-large 1440px<br>
-\`fd-col--x--xl\` will be used from 1440px and larger, column takes x/12 space of the row`
+\`fd-col--x--xl\` will be used from 1440px and larger, column takes x/12 space of the row.`
     }
 };
 

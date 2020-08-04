@@ -88,6 +88,16 @@ $cols: 12;
     }
   }
 
+  @include fd-rtl() {
+    direction: rtl;
+
+    @for $n from 0 through $cols {
+      &--offset-after-#{$n} {
+        margin-left: ( ( $n / $cols ) *100%);
+      }
+    }
+  }
+
   .#{$blockRow} {
     margin: 0 -0.25rem;
     margin-top: -0.5rem;
@@ -149,6 +159,16 @@ $cols: 12;
       }
     }
 
+    @include fd-rtl() {
+      direction: rtl;
+
+      @for $n from 0 through $cols {
+        &--offset-after-#{$n} {
+          margin-left: ( ( $n / $cols ) *100%);
+        }
+      }
+    }
+
     .#{$blockRow} {
       margin-left: -0.5rem;
       margin-right: -0.5rem;
@@ -173,6 +193,16 @@ $cols: 12;
       }
     }
   }
+
+  @include fd-rtl() {
+    direction: rtl;
+
+    @for $n from 0 through $cols {
+      &--offset-after-#{$n} {
+        margin-left: ( ( $n / $cols ) *100%);
+      }
+    }
+  }
 }
 
 @media (min-width: 1440px) {
@@ -189,6 +219,16 @@ $cols: 12;
 
       &--offset-after-#{$n}--#{map-get($size,$xl)} {
         margin-right: ( ( $n / $cols) *100%);
+      }
+    }
+
+    @include fd-rtl() {
+      direction: rtl;
+
+      @for $n from 0 through $cols {
+        &--offset-after-#{$n} {
+          margin-left: ( ( $n / $cols ) *100%);
+        }
       }
     }
   }

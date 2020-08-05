@@ -5,25 +5,16 @@ exports[`Storyshots Components/Object Marker Clickable Object Marker 1`] = `
   
 
   <a
-    class="fd-object-marker sap-icon--private"
+    class="fd-object-marker fd-object-marker--link sap-icon--edit"
   >
-     
-    <span
-      class="fd-object-marker--link "
-    >
-      Locked
-    </span>
+    Locked
   </a>
   
 
   <a
-    class="fd-object-marker sap-icon--user-edit"
+    class="fd-object-marker fd-object-marker--link sap-icon--user-edit"
   >
-    <span
-      class="fd-object-marker--link"
-    >
-      Unsaved Changes
-    </span>
+    Unsaved Changes
   </a>
   
 
@@ -39,25 +30,16 @@ exports[`Storyshots Components/Object Marker Clickable Object Marker 1`] = `
     
 
     <a
-      class="fd-object-marker sap-icon--private"
+      class="fd-object-marker fd-object-marker--link sap-icon--edit"
     >
-       
-      <span
-        class="fd-object-marker--link "
-      >
-        Locked
-      </span>
+      Locked
     </a>
     
 
     <a
-      class="fd-object-marker sap-icon--user-edit"
+      class="fd-object-marker fd-object-marker--link sap-icon--user-edit"
     >
-      <span
-        class="fd-object-marker--link"
-      >
-        Unsaved Changes
-      </span>
+      Unsaved Changes
     </a>
     
 

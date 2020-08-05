@@ -20,6 +20,7 @@ $block: #{$fd-namespace}-object-marker;
   word-break: break-word;
   align-items: center;
   line-height: 1;
+  display: inline-flex;
 
   &::before {
     font-size: 1rem;
@@ -69,7 +70,6 @@ $block: #{$fd-namespace}-object-marker;
     &::before {
       padding-left: $fd-object-marker-padding-right;
       padding-right: 0;
-      display: inline-block;
     }
 
     @include fd-empty() {

@@ -90,14 +90,14 @@ $cols: 11;
         }
 
         @for $n from 0 through $cols {
-          &--#{$n}--m {
+          &-md--#{$n} {
             @include placement('right', 'flex-end');
 
             margin-bottom: 0;
           }
         }
 
-        &--12--m {
+        &-md--12 {
           @include placement('left', 'flex-start');
 
           .fd-form-label {
@@ -118,14 +118,14 @@ $cols: 11;
         }
 
         @for $n from 0 through $cols {
-          &--#{$n}--l {
+          &-lg--#{$n} {
             @include placement('right', 'flex-end');
 
             margin-bottom: 0;
           }
         }
 
-        &--12--l {
+        &-lg--12 {
           @include placement('left', 'flex-start');
 
           .fd-form-label {
@@ -146,14 +146,14 @@ $cols: 11;
         }
 
         @for $n from 0 through $cols {
-          &--#{$n}--xl {
+          &-xl--#{$n} {
             @include placement('right', 'flex-end');
 
             margin-bottom: 0;
           }
         }
 
-        &--12--xl {
+        &-xl--12 {
           @include placement('left', 'flex-start');
 
           .fd-form-label {

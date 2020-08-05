@@ -7,7 +7,7 @@
 $block: #{$fd-namespace}-col;
 $blockContainer: #{$fd-namespace}-container;
 $blockRow: #{$fd-namespace}-row;
-$size: (600:"m", 1024: "l", 1440: "xl");
+$size: (600:"md", 1024: "lg", 1440: "xl");
 $m: 600;
 $l: 1024;
 $xl: 1440;
@@ -145,16 +145,16 @@ $cols: 12;
     padding: 1rem 0.5rem 0 0.5rem;
 
     @for $n from 0 through $cols {
-      &--#{$n}--#{map-get($size,$m)} {
+      &-#{map-get($size,$m)}--#{$n} {
         min-width: ( ( $n / $cols ) *100%);
         max-width: ( ( $n / $cols ) *100%);
       }
 
-      &--offset-#{$n}--#{map-get($size,$m)} {
+      &-#{map-get($size,$m)}--offset-#{$n} {
         margin-left: ( ( $n / $cols ) *100%);
       }
 
-      &--offset-after-#{$n}--#{map-get($size,$m)} {
+      &-#{map-get($size,$m)}--offset-after-#{$n} {
         margin-right: ( ( $n / $cols ) *100%);
       }
     }
@@ -179,46 +179,17 @@ $cols: 12;
 @media (min-width: 1024px) {
   .#{$block} {
     @for $n from 0 through $cols {
-      &--#{$n}--#{map-get($size,$l)} {
+      &-#{map-get($size,$l)}--#{$n} {
         min-width: ( ( $n / $cols ) *100%);
         max-width: ( ( $n / $cols ) *100%);
       }
 
-      &--offset-#{$n}--#{map-get($size,$l)} {
+      &-#{map-get($size,$l)}--offset-#{$n} {
         margin-left: ( ( $n / $cols ) *100%);
       }
 
-      &--offset-after-#{$n}--#{map-get($size,$l)} {
+      &-#{map-get($size,$l)}--offset-after-#{$n} {
         margin-right: ( ( $n / $cols ) *100%);
-      }
-    }
-  }
-
-  @include fd-rtl() {
-    direction: rtl;
-
-    @for $n from 0 through $cols {
-      &--offset-after-#{$n} {
-        margin-left: ( ( $n / $cols ) *100%);
-      }
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  .#{$block} {
-    @for $n from 0 through 12 {
-      &--#{$n}--#{map-get($size,$xl)} {
-        min-width: ( ( $n / $cols ) *100%);
-        max-width: ( ( $n / $cols ) *100%);
-      }
-
-      &--offset-#{$n}--#{map-get($size,$xl)} {
-        margin-left: ( ( $n / $cols ) *100%);
-      }
-
-      &--offset-after-#{$n}--#{map-get($size,$xl)} {
-        margin-right: ( ( $n / $cols) *100%);
       }
     }
 
@@ -228,6 +199,35 @@ $cols: 12;
       @for $n from 0 through $cols {
         &--offset-after-#{$n} {
           margin-left: ( ( $n / $cols ) *100%);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .#{$block} {
+    @for $n from 0 through 12 {
+      &-#{map-get($size,$xl)}--#{$n} {
+        min-width: ( ( $n / $cols ) *100%);
+        max-width: ( ( $n / $cols ) *100%);
+      }
+
+      &-#{map-get($size,$xl)}--offset-#{$n} {
+        margin-left: ( ( $n / $cols ) *100%);
+      }
+
+      &-#{map-get($size,$xl)}--offset-after-#{$n} {
+        margin-right: ( ( $n / $cols) *100%);
+      }
+
+      @include fd-rtl() {
+        direction: rtl;
+
+        @for $n from 0 through $cols {
+          &--offset-after-#{$n} {
+            margin-left: ( ( $n / $cols ) *100%);
+          }
         }
       }
     }

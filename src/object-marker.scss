@@ -43,15 +43,26 @@ $block: #{$fd-namespace}-object-marker;
 
     &:hover {
       text-decoration: underline;
-      /* stylelint-disable */
-      &:before {
+
+      &::before {
         text-decoration: none;
       }
-      /* stylelint-enable */
     }
 
     &:visited {
       text-decoration: none;
+    }
+  }
+
+  &__icon {
+    color: $fd-object-marker-color;
+    font-style: normal;
+    padding-right: $fd-object-marker-padding-right;
+    line-height: 1;
+
+    @include fd-rtl() {
+      padding-left: $fd-object-marker-padding-right;
+      padding-right: 0;
     }
   }
 

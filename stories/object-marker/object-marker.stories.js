@@ -65,12 +65,12 @@ iconAndText.parameters = {
  */
 
 export const clickableObjectMarker = () => `
-<a class="fd-object-marker fd-object-marker--link sap-icon--edit">Locked</i></a>
+<a class="fd-object-marker fd-object-marker--link sap-icon--private">Locked</i></a>
 <a class="fd-object-marker fd-object-marker--link sap-icon--user-edit">Unsaved Changes</i></a>
 
 <div dir="rtl">
 <h4>RTL Support</h4>
-<a class="fd-object-marker fd-object-marker--link sap-icon--edit">Locked</i></a>
+<a class="fd-object-marker fd-object-marker--link sap-icon--private">Locked</i></a>
 <a class="fd-object-marker fd-object-marker--link sap-icon--user-edit">Unsaved Changes</i></a>
 </div>
 `;

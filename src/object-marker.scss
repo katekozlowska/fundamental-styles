@@ -43,10 +43,11 @@ $block: #{$fd-namespace}-object-marker;
 
     &:hover {
       text-decoration: underline;
-
-      &::before {
+      /* stylelint-disable */
+      &:before {
         text-decoration: none;
       }
+      /* stylelint-enable */
     }
 
     &:visited {

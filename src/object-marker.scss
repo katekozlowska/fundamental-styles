@@ -57,12 +57,17 @@ $block: #{$fd-namespace}-object-marker;
   &__icon {
     color: $fd-object-marker-color;
     font-style: normal;
-    padding-right: $fd-object-marker-padding-right;
     line-height: 1;
 
+    &::before {
+      padding-right: $fd-object-marker-padding-right;
+    }
+
     @include fd-rtl() {
-      padding-left: $fd-object-marker-padding-right;
-      padding-right: 0;
+      &::before {
+        padding-left: $fd-object-marker-padding-right;
+        padding-right: 0;
+      }
     }
   }
 

@@ -66,36 +66,51 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
   
 
   <span
-    class="fd-object-marker sap-icon--request"
+    class="fd-object-marker"
   >
+    <i
+      class="sap-icon--request fd-object-marker__icon"
+    />
     Request
   </span>
   
 
   <span
-    class="fd-object-marker sap-icon--favorite"
+    class="fd-object-marker"
   >
+    <i
+      class="sap-icon--favorite fd-object-marker__icon"
+    />
     Favourite
   </span>
   
 
   <span
-    class="fd-object-marker sap-icon--flag"
+    class="fd-object-marker"
   >
+    <i
+      class="sap-icon--flag fd-object-marker__icon"
+    />
     Flag
   </span>
   
 
   <span
-    class="fd-object-marker sap-icon--user-edit"
+    class="fd-object-marker"
   >
+    <i
+      class="sap-icon--user-edit fd-object-marker__icon"
+    />
     Draft
   </span>
   
 
   <span
-    class="fd-object-marker sap-icon--private"
+    class="fd-object-marker "
   >
+    <i
+      class="sap-icon--private fd-object-marker__icon"
+    />
     Locked
   </span>
   
@@ -112,36 +127,51 @@ exports[`Storyshots Components/Object Marker Icon And Text 1`] = `
     
 
     <span
-      class="fd-object-marker sap-icon--request"
+      class="fd-object-marker"
     >
+      <i
+        class="sap-icon--request fd-object-marker__icon"
+      />
       Request
     </span>
     
 
     <span
-      class="fd-object-marker sap-icon--favorite"
+      class="fd-object-marker"
     >
+      <i
+        class="sap-icon--favorite fd-object-marker__icon"
+      />
       Favourite
     </span>
     
 
     <span
-      class="fd-object-marker sap-icon--flag"
+      class="fd-object-marker"
     >
+      <i
+        class="sap-icon--flag fd-object-marker__icon"
+      />
       Flag
     </span>
     
 
     <span
-      class="fd-object-marker sap-icon--user-edit"
+      class="fd-object-marker"
     >
+      <i
+        class="sap-icon--user-edit fd-object-marker__icon"
+      />
       Draft
     </span>
     
 
     <span
-      class="fd-object-marker sap-icon--private"
+      class="fd-object-marker "
     >
+      <i
+        class="sap-icon--private fd-object-marker__icon"
+      />
       Locked
     </span>
     
